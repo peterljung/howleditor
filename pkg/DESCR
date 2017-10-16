@@ -1,0 +1,12 @@
+Howl is a general purpose editor that aims to be both lightweight and fully
+customizable. It is built on top of the very fast LuaJIT runtime, uses GTK for
+its interface, and can be extended in either Lua or Moonscript.
+
+While Howl uses GTK, its interface is primarily text oriented. Thus, it does not
+offer any traditional dialogue boxes, tool bars, or even a menu bar.
+
+Generally speaking, Howl draws a lot of inspiration from Emacs and Vim, and
+should feel familiar to anyone who has used any of these editors.
+
+While Howl is all about things being configurable, its policy is to start off
+with basic features being enabled rather than disabled where it makes sense.
