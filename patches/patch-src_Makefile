@@ -1,9 +1,0 @@
-$OpenBSD$
---- src/Makefile.orig	Sat Oct 14 19:25:23 2017
-+++ src/Makefile	Sat Oct 14 19:25:34 2017
-@@ -1,4 +1,4 @@
--PREFIX ?= /usr/local
-+PREFIX = /usr/local
- UNAME_S := $(shell uname -s)
- 
- GTK = gtk+-3.0

@@ -15,15 +15,15 @@ EXTRACT_SUFX=	.tgz
 # MIT License and SIL Open Font License 1.1 (http://fontawesome.io/license)
 PERMIT_PACKAGE_CDROM=	Yes
 
+MAKE_FLAGS=	PREFIX="/usr/local"
+
 USE_GMAKE=	Yes
 WRKSRC=		${WRKDIST}/src
 NO_TEST=	Yes
 BUILD_DEPENDS=	devel/gmake
 LIB_DEPENDS=	x11/gtk+3
-RUN_DEPENDS =	devel/desktop-file-utils \
+RUN_DEPENDS=	devel/desktop-file-utils \
 		x11/gtk+3,-guic
-
-MAKE_FLAGS +=	CCOPT="${CFLAGS}"
 
 WANTLIB += atk-1.0 c cairo cairo-gobject gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gtk-3 intl
