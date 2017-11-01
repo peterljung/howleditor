@@ -15,7 +15,9 @@ EXTRACT_SUFX=	.tgz
 # MIT License and SIL Open Font License 1.1 (http://fontawesome.io/license)
 PERMIT_PACKAGE_CDROM=	Yes
 
-MAKE_FLAGS=	PREFIX="/usr/local"
+MAKE_FLAGS+=	PREFIX="/usr/local" \
+		COPT="${CFLAGS}" \
+		CCOPT="${CFLAGS}"
 
 USE_GMAKE=	Yes
 WRKSRC=		${WRKDIST}/src
