@@ -1,0 +1,15 @@
+$OpenBSD$
+
+Index: src/deps/lpeg-0.10.2/makefile
+--- src/deps/lpeg-0.10.2/makefile.orig
++++ src/deps/lpeg-0.10.2/makefile
+@@ -21,8 +21,7 @@ CWARNS = -Wall -Wextra -pedantic \
+ 	#  -Wunreachable-code \
+ 
+ 
+-CFLAGS = $(CWARNS) $(COPT) -ansi -I$(LUADIR)
+-CC = gcc
++CFLAGS += $(CWARNS) $(COPT) -ansi -I$(LUADIR)
+ 
+ # For Linux
+ DLLFLAGS = -shared -fpic
