@@ -2,7 +2,7 @@
 
 COMMENT=	A general purpose, fast and lightweight editor
 
-V=		0.5.2
+V=		0.5.3
 DISTNAME=	howl-$V
 PKGNAME=	howleditor-$V
 CATEGORIES=	editors
