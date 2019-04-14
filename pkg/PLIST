@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/howl
 bin/howl-spec
 share/appdata/
@@ -91,8 +91,6 @@ share/howl/bundles/basic_modes/lexers/rstats.bc
 share/howl/bundles/basic_modes/lexers/rstats.lua
 share/howl/bundles/basic_modes/lexers/scala.bc
 share/howl/bundles/basic_modes/lexers/scala.lua
-share/howl/bundles/basic_modes/lexers/scheme.bc
-share/howl/bundles/basic_modes/lexers/scheme.lua
 share/howl/bundles/basic_modes/lexers/smalltalk.bc
 share/howl/bundles/basic_modes/lexers/smalltalk.lua
 share/howl/bundles/basic_modes/lexers/sql.bc
@@ -121,6 +119,9 @@ share/howl/bundles/c/init.bc
 share/howl/bundles/c/init.moon
 share/howl/bundles/c/misc/
 share/howl/bundles/c/misc/example.c
+share/howl/bundles/c/spec/
+share/howl/bundles/c/spec/c_mode_spec.bc
+share/howl/bundles/c/spec/c_mode_spec.moon
 share/howl/bundles/clojure/
 share/howl/bundles/clojure/LICENSE.md
 share/howl/bundles/clojure/README.md
@@ -264,6 +265,9 @@ share/howl/bundles/howl-themes/blueberry_blend/
 share/howl/bundles/howl-themes/blueberry_blend/blueberry_blend.bc
 share/howl/bundles/howl-themes/blueberry_blend/blueberry_blend.moon
 share/howl/bundles/howl-themes/blueberry_blend/circle.png
+share/howl/bundles/howl-themes/dracula/
+share/howl/bundles/howl-themes/dracula/dracula.bc
+share/howl/bundles/howl-themes/dracula/dracula.moon
 share/howl/bundles/howl-themes/init.bc
 share/howl/bundles/howl-themes/init.moon
 share/howl/bundles/howl-themes/monokai/
@@ -508,6 +512,8 @@ share/howl/bundles/ruby/util.moon
 share/howl/bundles/rust/
 share/howl/bundles/rust/init.bc
 share/howl/bundles/rust/init.moon
+share/howl/bundles/rust/misc/
+share/howl/bundles/rust/misc/example.rs
 share/howl/bundles/rust/rust_lexer.bc
 share/howl/bundles/rust/rust_lexer.moon
 share/howl/bundles/rust/rust_mode.bc
@@ -892,12 +898,16 @@ share/howl/lib/ext/spec-support/say/LICENSE
 share/howl/lib/ext/spec-support/say/init.bc
 share/howl/lib/ext/spec-support/say/init.lua
 share/howl/lib/howl/
+share/howl/lib/howl/activities.bc
+share/howl/lib/howl/activities.moon
 share/howl/lib/howl/application.bc
 share/howl/lib/howl/application.moon
 share/howl/lib/howl/aux.bc
 share/howl/lib/howl/aux.moon
 share/howl/lib/howl/bindings.bc
 share/howl/lib/howl/bindings.moon
+share/howl/lib/howl/breadcrumbs.bc
+share/howl/lib/howl/breadcrumbs.moon
 share/howl/lib/howl/buffer.bc
 share/howl/lib/howl/buffer.moon
 share/howl/lib/howl/buffer_context.bc
@@ -954,6 +964,8 @@ share/howl/lib/howl/editing/init.bc
 share/howl/lib/howl/editing/init.moon
 share/howl/lib/howl/editing/text.bc
 share/howl/lib/howl/editing/text.moon
+share/howl/lib/howl/file_search.bc
+share/howl/lib/howl/file_search.moon
 share/howl/lib/howl/globals.bc
 share/howl/lib/howl/globals.moon
 share/howl/lib/howl/init.bc
@@ -987,8 +999,8 @@ share/howl/lib/howl/interactions/replacement.bc
 share/howl/lib/howl/interactions/replacement.moon
 share/howl/lib/howl/interactions/search.bc
 share/howl/lib/howl/interactions/search.moon
-share/howl/lib/howl/interactions/selection_list.bc
-share/howl/lib/howl/interactions/selection_list.moon
+share/howl/lib/howl/interactions/select.bc
+share/howl/lib/howl/interactions/select.moon
 share/howl/lib/howl/interactions/signal_selection.bc
 share/howl/lib/howl/interactions/signal_selection.moon
 share/howl/lib/howl/interactions/text_entry.bc
@@ -1046,6 +1058,8 @@ share/howl/lib/howl/timer.moon
 share/howl/lib/howl/ui/
 share/howl/lib/howl/ui/action_buffer.bc
 share/howl/lib/howl/ui/action_buffer.moon
+share/howl/lib/howl/ui/activity.bc
+share/howl/lib/howl/ui/activity.moon
 share/howl/lib/howl/ui/buffer_popup.bc
 share/howl/lib/howl/ui/buffer_popup.moon
 share/howl/lib/howl/ui/colors.bc
@@ -1069,6 +1083,12 @@ share/howl/lib/howl/ui/icons/font_awesome.bc
 share/howl/lib/howl/ui/icons/font_awesome.moon
 share/howl/lib/howl/ui/indicator_bar.bc
 share/howl/lib/howl/ui/indicator_bar.moon
+share/howl/lib/howl/ui/journal_buffer.bc
+share/howl/lib/howl/ui/journal_buffer.moon
+share/howl/lib/howl/ui/list.bc
+share/howl/lib/howl/ui/list.moon
+share/howl/lib/howl/ui/list_buffer.bc
+share/howl/lib/howl/ui/list_buffer.moon
 share/howl/lib/howl/ui/list_widget.bc
 share/howl/lib/howl/ui/list_widget.moon
 share/howl/lib/howl/ui/markup/
@@ -1103,8 +1123,8 @@ share/howl/lib/howl/ui/window.moon
 share/howl/lib/howl/ustring.bc
 share/howl/lib/howl/ustring.moon
 share/howl/lib/howl/util/
-share/howl/lib/howl/util/destructor.bc
-share/howl/lib/howl/util/destructor.moon
+share/howl/lib/howl/util/ignore_file.bc
+share/howl/lib/howl/util/ignore_file.moon
 share/howl/lib/howl/util/lpeg_lexer.bc
 share/howl/lib/howl/util/lpeg_lexer.moon
 share/howl/lib/howl/util/matcher.bc
@@ -1128,6 +1148,8 @@ share/howl/lib/howl/util/table.bc
 share/howl/lib/howl/util/table.moon
 share/howl/lib/howl/util/task_runner.bc
 share/howl/lib/howl/util/task_runner.moon
+share/howl/lib/howl/util/utf8.bc
+share/howl/lib/howl/util/utf8.moon
 share/howl/lib/howl/variables/
 share/howl/lib/howl/variables/core_variables.bc
 share/howl/lib/howl/variables/core_variables.moon
@@ -1187,6 +1209,8 @@ share/howl/lib/ljglibs/gdk/window.moon
 share/howl/lib/ljglibs/gio/
 share/howl/lib/ljglibs/gio/application.bc
 share/howl/lib/ljglibs/gio/application.moon
+share/howl/lib/ljglibs/gio/application_command_line.bc
+share/howl/lib/ljglibs/gio/application_command_line.moon
 share/howl/lib/ljglibs/gio/file.bc
 share/howl/lib/ljglibs/gio/file.moon
 share/howl/lib/ljglibs/gio/file_info.bc
@@ -1214,6 +1238,8 @@ share/howl/lib/ljglibs/glib/init.bc
 share/howl/lib/ljglibs/glib/init.moon
 share/howl/lib/ljglibs/glib/list.bc
 share/howl/lib/ljglibs/glib/list.moon
+share/howl/lib/ljglibs/glib/mapped_file.bc
+share/howl/lib/ljglibs/glib/mapped_file.moon
 share/howl/lib/ljglibs/glib/regex.bc
 share/howl/lib/ljglibs/glib/regex.moon
 share/howl/lib/ljglibs/glib/shell.bc
@@ -1339,6 +1365,8 @@ share/howl/lib/ljglibs/spec/glib/init_spec.bc
 share/howl/lib/ljglibs/spec/glib/init_spec.moon
 share/howl/lib/ljglibs/spec/glib/list_spec.bc
 share/howl/lib/ljglibs/spec/glib/list_spec.moon
+share/howl/lib/ljglibs/spec/glib/mapped_file_spec.bc
+share/howl/lib/ljglibs/spec/glib/mapped_file_spec.moon
 share/howl/lib/ljglibs/spec/glib/regex_spec.bc
 share/howl/lib/ljglibs/spec/glib/regex_spec.moon
 share/howl/lib/ljglibs/spec/glib/shell_spec.bc
@@ -1379,6 +1407,7 @@ share/howl/lib/ljglibs/util.moon
 share/howl/lib/scripts/
 share/howl/lib/scripts/screen-shooter.bc
 share/howl/lib/scripts/screen-shooter.moon
+share/howl/lint_config.moon
 share/howl/spec/
 share/howl/spec/support/
 share/howl/spec/support/spec_helper.moon
@@ -1388,3 +1417,5 @@ share/icons/hicolor/scalable/apps/howl.svg
 @unexec-delete %D/bin/update-desktop-database
 @exec %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
 @unexec-delete %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
+@tag update-desktop-database
+@tag gtk-update-icon-cache %D/share/icons/hicolor
